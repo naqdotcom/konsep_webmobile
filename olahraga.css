@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #133E87, #608BC1, #CBDCEB); 
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+}
+
+header, footer {
+    background: linear-gradient(135deg, #608BC1, #133E87); 
+    color: #CBDCEB;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 2em;
+    animation: fadeIn 1.5s ease;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+nav a {
+    color: #0f3069; 
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+main {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 2em;
+    width: 100%;
+}
+
+article, aside {
+    background-color: #ffffff; 
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(33, 58, 100, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+article:hover, aside:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(33, 58, 100, 0.4);
+}
+
+article h2, aside h2 {
+    font-size: 1.8em;
+    margin-bottom: 1em;
+    color: #133E87; 
+    text-align: center;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    text-align: center;
+}
+
+ul {
+    margin-left: 1.5em;
+    list-style-type: square;
+    color: #555;
+    line-height: 1.8;
+}
+
+ul li {
+    margin: 0.5em 0;
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+.button {
+    display: inline-block;
+    background: linear-gradient(135deg, #133E87, #133E87);
+    color: #ffffff;
+    padding: 0.7em 1.5em;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(33, 58, 100, 0.3);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#intro {
+    margin-bottom: 2em; 
+}
+
+.articles article {
+    margin-bottom: 2em; 
+}
+
+.biodata {
+    margin-top: 1em;
+    text-align: center;
+}
